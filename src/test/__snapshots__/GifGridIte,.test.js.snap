@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Prueba de validacion de componente Debe de validar correcta ejecucion del componente 1`] = `
+<div
+  className="card animate__animated animate__fadein"
+>
+  <img
+    alt="prueba"
+    src=""
+  />
+  <p>
+    prueba
+  </p>
+</div>
+`;
