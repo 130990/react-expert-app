@@ -4,11 +4,12 @@ import PropTypes from 'prop-types'
 
 export const AgregarCategoria = ({ setCategorias }) => {
     const [inputValue, setInputValue] = useState('');
-    const handleCambiarInput = (e) => {
+    const handleCambiarInput = (e) => {        
         setInputValue(e.target.value)
     }
     const handlEnviar = (e) => {
         e.preventDefault();
+        console.log('Llamado Submit......');
         if (inputValue.length > 2) {
             setCategorias(cate => [inputValue,...cate])
             setInputValue('');

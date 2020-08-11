@@ -5,11 +5,11 @@ exports[`Prueba de validacion de componente Debe de validar correcta ejecucion d
   className="card animate__animated animate__fadein"
 >
   <img
-    alt="prueba"
-    src=""
+    alt="Prueba"
+    src="https://PruebaURL"
   />
   <p>
-    prueba
+    Prueba
   </p>
 </div>
 `;
