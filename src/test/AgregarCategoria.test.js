@@ -30,9 +30,13 @@ describe('Pruebas del componente AgregarCategoria', () => {
 
     test('Debe de llamar al setCategorias y limpiar la caja de texto', () => {
         const valor = 'Prueva texto';
-        //ResultadoObtenido.find('input').simulate('change',)
-        
-       
+        ResultadoObtenido.find('input').simulate('change', { target: { value: valor } });
+        ResultadoObtenido.find('form').simulate('submit', { preventDefault() { } });
+        expect(setCategorias).toHaveBeenCalled();
+        expect(ResultadoObtenido.find('input').prop('value')).toBe('');
+
+
+
 
     })
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import { useFecthGifs } from '../hooks/useFecthGifs'
 import { GiftGridItem } from './GiftGridItem'
+import PropTypes from 'prop-types';
 
 export const GifGrid = ({ categoria }) => {
 
@@ -10,7 +11,7 @@ export const GifGrid = ({ categoria }) => {
     return (
         <>
             <h3>{categoria}</h3>
-            {loading &&<p className='animate__animated animate__flash'>Cargando imagenes...</p> }
+            {loading && <p className='animate__animated animate__flash'>Cargando imagenes...</p>}
             <div className="card-grid" >
                 {
                     imagenes.map((img) => (
@@ -20,4 +21,8 @@ export const GifGrid = ({ categoria }) => {
             </div>
         </>
     )
+}
+
+GifGrid.propTypes = {
+    categoria: PropTypes.string.isRequired
 }
